@@ -7,6 +7,13 @@
  * Local storage is accessed much like an array.
  */
 
+// ***************
+// **** TO DO ****
+// ***************
+// Determine from selected text whether it is bold/italic etc and what
+// font and size, so the buttons represent the state of the selected text.
+// Use icons
+
 const heading = document.querySelector(".heading");
 const content = document.querySelector(".content");
 const inputarea = document.querySelector(".input-area");
