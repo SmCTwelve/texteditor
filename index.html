@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Text Editor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Editor -->
+  <main class="editor-container">
+    <!-- Toolbar -->
+    <div class="toolbar">
+      <!-- Clear editor and storage -->
+      <button id="new">Clear</button>
+      <div class="font-area">
+        <!-- Font size -->
+        <select id="fontsize">
+          <option value="10px">10</option>
+          <option value="11px">11</option>
+          <option value="12px">12</option>
+          <option value="14px">14</option>
+          <option value="16px">16</option>
+          <option value="18px" selected>18</option>
+          <option value="24px">24</option>
+          <option value="32px">32</option>
+          <option value="48px">48</option>
+          <option value="72px">72</option>
+        </select>
+        <!-- Font family -->
+        <select name="font" id="font">
+          <option value="Arial, sans-serif" class="arial" selected>Arial</option>
+          <option value="Georgia, serif" class="georgia">Georgia</option>
+          <option value="monospace" class="mono">Monospace</option>
+        </select>
+        <!-- Color -->
+        <input type="color" id="color" value="#000" />
+      </div>
+      <!-- Bold, italic, underline -->
+      <div class="styling-area">
+        <button id="bold" data-command="bold">B</button>
+        <button id="italic" data-command="italic">I</button>
+        <button id="underline" data-command="underline">U</button>
+      </div>
+      <!-- Text alignment -->
+      <div class="align-area">
+        <button id="left" data-command="justifyLeft">Left</button>
+        <button id="center" data-command="justifyCenter">Center</button>
+        <button id="right" data-command="justifyRight">Right</button>
+        <button id="justify" data-command="justifyFull">Justify</button>
+      </div>
+    </div>
+    <!-- input area -->
+    <div class="input-area">
+      <div class="heading" contenteditable="true"></div>
+      <div class="content" contenteditable="true"></div>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
