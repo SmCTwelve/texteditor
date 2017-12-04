@@ -1,4 +1,3 @@
-# texteditor
 https://smctwelve.github.io/texteditor  
 
 JavaScript and HTML5 text editor. 
